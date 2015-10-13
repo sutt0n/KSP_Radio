@@ -22,20 +22,20 @@ namespace KSP_Radio
 
 			switch (level) {
 			case Severity.Warning:
-				severity = "[SEVERE]";
+				severity = "SEVERE";
 				break;
 			
 			default:
 			case Severity.Notice:
-				severity = "[NOTICE]";
+				severity = "NOTICE";
 				break;
 
 			case Severity.Fatal:
-				severity = "[FATAL]";
+				severity = "FATAL";
 				break;
 			}
 
-			print("[KSP Radio] " + severity + ": " + message);
+			print("[KSP Radio] [" + severity + "] " + message);
 
 		}
 
